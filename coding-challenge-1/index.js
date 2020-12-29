@@ -2,8 +2,6 @@
 // jshint esversion:7
 
 
-// Coding Challenge 1
-
 // 1) Variables for Mark & John's Mass and Height
 
 // Mark's Data
