@@ -1,6 +1,9 @@
 'use strict';
 
 
+'use strict';
+
+
 // Coding Challenge 1
 
 
@@ -52,6 +55,21 @@ console.log(koalaAvg2);
 
 function checkWinner(koalaAvg, dolphAvg) {
     if (koalaAvg * 2 < dolphAvg) {
-        console.log(`Dolphins win (${dolphAvg} vs. ${koalaAvg})`);
+        return `Dolphins win (${dolphAvg} vs. ${koalaAvg})!`;
+    } else {
+        return 'Koalas win!';
     }
 }
+
+
+// 4) Use the above function to determine the winner for Data 1 & Data 2
+
+const data1Winner = checkWinner(koalaAvg1, dolphAvg1);
+console.log(data1Winner);
+
+// Data 1 winner: Koalas
+
+const data2Winner = checkWinner(koalaAvg2, dolphAvg2);
+console.log(data2Winner);
+
+// Data 2 winner: Dolphins
