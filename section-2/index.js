@@ -1,9 +1,6 @@
 'use strict';
 
 
-'use strict';
-
-
 // Coding Challenge 1
 
 
@@ -54,11 +51,13 @@ console.log(koalaAvg2);
 
 
 function checkWinner(koalaAvg, dolphAvg) {
-    if (koalaAvg * 2 < dolphAvg) {
+    if (koalaAvg * 2 <= dolphAvg) {
         return `Dolphins win (${dolphAvg} vs. ${koalaAvg})!`;
+    } else if (dolphAvg * 2 <= koalaAvg) {
+        return `Koalas win (${koalaAvg} vs. ${dolphAvg})!`;
     } else {
-        return 'Koalas win!';
-    }
+        return 'No team wins!';
+    } 
 }
 
 
